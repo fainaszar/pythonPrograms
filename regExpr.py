@@ -21,3 +21,5 @@ for tag in tags:
 
 # Other Regular Expressions:
 '#\w*[^\n]*' - Matches all comments
+#re.sub("(?<= )(&&)(?= )","and",string) Matches && and replaces it with and
+#re.sub("(?<= )(\|\|)(?= )","or",string) Matches || and replaces it with or
