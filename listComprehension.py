@@ -24,6 +24,12 @@ prime = [x for x in range(2,int(raw_input("Enter Limit: "))) if all(x%y!=0 for y
 print str(prime) 
 
 
+N = int(raw_input())
+nList = [x for x in raw_input().split()]
+
+print all([int(i)>0 for i in nList]) and any([j == j[::-1] for j in nList])
+
+
 
 
 
