@@ -1,1 +1,2 @@
-print "Hello World from Python"
+var = "<Hello World from Python>"
+print var.strip("<,>")
