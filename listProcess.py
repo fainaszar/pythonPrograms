@@ -14,6 +14,13 @@ def processList(lst):
 
 				if lst.count(item) > 0:
 					lst.remove(item)
+
+				if lst.count(name) > 1:
+					x=lst.index(name)
+					for i in lst[x+1:]:
+						if i == name:
+							lst.remove(i)
+
 		else:
 			if lst.count(name) > 1:
 				x = lst.index(name)
@@ -27,7 +34,7 @@ def processList(lst):
 
 
 
-List = ["Bayer Aspirin","aspirin","xelzange ","lyrica","Xelzange Maven" ,"Xelzange","aspirin","Pfizer Aspirin" , "Aspirin", "s","s","s","s" ,"t"]
+List = ["Bayer Aspirin","aspirin","xelzange ","lyrica","Xelzange Maven" ,"Xelzange","aspirin","Pfizer Aspirin" , "Aspirin", "s","s","s","s" ,"t","Bayer Aspirin"]
 #N = int(raw_input("Enter no of list items"))
 
 #for i in range(N):
