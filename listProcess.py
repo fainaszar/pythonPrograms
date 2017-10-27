@@ -34,7 +34,7 @@ def processList(lst):
 
 
 
-List = ["Bayer Aspirin","aspirin","xelzange ","lyrica","Xelzange Maven" ,"Xelzange","aspirin","Pfizer Aspirin" , "Aspirin", "s","s","s","s" ,"t","Bayer Aspirin"]
+List = ["Bayer Aspirin","aspirin","xelzange ","lyrica","Xelzange Maven" ,"Bayer Aspirin","Xelzange","aspirin","Pfizer Aspirin" , "Aspirin", "s","s","s","s" ,"t","Bayer Aspirin"]
 #N = int(raw_input("Enter no of list items"))
 
 #for i in range(N):
