@@ -19,6 +19,7 @@ class RedditbotSpider(scrapy.Spider):
         
 
         info  = zip(titles,votes,times,comments)
+        print "Info: **************\n" , info
 
         scrapped_info={}
 
