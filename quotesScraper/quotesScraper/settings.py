@@ -21,6 +21,10 @@ NEWSPIDER_MODULE = 'quotesScraper.spiders'
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
 
+ITEM_PIPELINES = {'scrapy.pipelines.files.FilesPipeline': 1}
+
+FILES_STORE = '.'
+
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
 

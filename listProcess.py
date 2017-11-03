@@ -69,7 +69,7 @@ def processList(lst):
 
 
 
-def listProcessing(lst,scoreParam = 80):
+def listProcessing(lst,scoreParam = 70):
 	drugSet = set(lst)
 	drugList = list(drugSet)
 #	print drugList
@@ -81,7 +81,7 @@ def listProcessing(lst,scoreParam = 80):
 			res = process.extract(drug,drugList)
 			#print res
 			for (match,percent) in res:
-				if percent in range(90,99):
+				if percent in range(int(scoreParam),99): #90-99
 					drugList.remove(match)
 
 
@@ -96,7 +96,7 @@ def listProcessing(lst,scoreParam = 80):
 				res = process.extract(n,drugList)
 				
 			for (match,percent) in res:
-				if percent in range(int(scoreParam)-10,99): #default param is 70
+				if percent in range(int(scoreParam),99): #default param is 70
 					#
 					if len(match) > 1 and " " not in match:
 					
@@ -107,7 +107,7 @@ def listProcessing(lst,scoreParam = 80):
 			#print "Drug: " ,drug
 			res = process.extract(drug,drugList)
 
-			print res
+			#print res
 			
 			for (match,percent) in res:
 				
@@ -247,7 +247,7 @@ if scoreParam == "":
 	print "Scoring Parameter set to DEFAULT"
 	listProcessing(inpList)
 else:
-	print "Scoring Parameter set to %s pc . All Drugs matching and above the scoring parameter shall be removed." % scoreParam
+	print "Scoring Parameter set to %s%% . All Drugs matching and above the scoring parameter shall be removed.\n" % scoreParam
 	listProcessing(inpList,scoreParam = scoreParam)
 #print "Method 2".center(40,"-")
 #processList2(inpList)
