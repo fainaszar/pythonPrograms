@@ -1,3 +1,4 @@
+#Using fuzzywuzzy
 from fuzzywuzzy import fuzz
 from fuzzywuzzy import process
 def processList(lst):
@@ -69,7 +70,11 @@ def processList(lst):
 
 
 
+<<<<<<< HEAD
 def listProcessing(lst,scoreParam = 80):
+=======
+def listProcessing(lst,scoreParam = 70):
+>>>>>>> scrapy
 	drugSet = set(lst)
 	drugList = list(drugSet)
 #	print drugList
@@ -81,7 +86,11 @@ def listProcessing(lst,scoreParam = 80):
 			res = process.extract(drug,drugList)
 			#print res
 			for (match,percent) in res:
+<<<<<<< HEAD
 				if percent in range(90,99):
+=======
+				if percent in range(int(scoreParam),99): #90-99
+>>>>>>> scrapy
 					drugList.remove(match)
 
 
@@ -96,7 +105,11 @@ def listProcessing(lst,scoreParam = 80):
 				res = process.extract(n,drugList)
 				
 			for (match,percent) in res:
+<<<<<<< HEAD
 				if percent in range(int(scoreParam)-10,99): #default param is 70
+=======
+				if percent in range(int(scoreParam),99): #default param is 70
+>>>>>>> scrapy
 					#
 					if len(match) > 1 and " " not in match:
 					
@@ -107,7 +120,11 @@ def listProcessing(lst,scoreParam = 80):
 			#print "Drug: " ,drug
 			res = process.extract(drug,drugList)
 
+<<<<<<< HEAD
 			print res
+=======
+			#print res
+>>>>>>> scrapy
 			
 			for (match,percent) in res:
 				
@@ -247,7 +264,11 @@ if scoreParam == "":
 	print "Scoring Parameter set to DEFAULT"
 	listProcessing(inpList)
 else:
+<<<<<<< HEAD
 	print "Scoring Parameter set to %s pc . All Drugs matching and above the scoring parameter shall be removed." % scoreParam
+=======
+	print "Scoring Parameter set to %s%% . All Drugs matching and above the scoring parameter shall be removed.\n" % scoreParam
+>>>>>>> scrapy
 	listProcessing(inpList,scoreParam = scoreParam)
 #print "Method 2".center(40,"-")
 #processList2(inpList)
