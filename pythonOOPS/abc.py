@@ -1,11 +1,14 @@
 #Example on oops using Inheritance
 
-from abc import ABCMeta, abstractmethod
 
-class Vehicle(object):
+# For python3.4+ we use ABC and pass it as class arg and for python2 we use ABCMeta and add it as __metaclass__ attrib
+#For python3.0 we use metaclass=ABCMeta as class arg
+from abc import ABC ,ABCMeta, abstractmethod
+
+class Vehicle(ABC):
 	base_sales_price = 0
 
-	__metaclass__ = ABCMeta
+#	__metaclass__ = ABCMeta
 
 	wheels = 0
 
@@ -72,17 +75,19 @@ maruti = Car(300,"800","Maruti",2008,None)
 tata = Truck(411,"991","TATA",2009,None)
 scooty = Motorcycle(0,'Elantra','Bajaj',2011,None)
 
+bike = Vehicle(200,"Honda","Splender",2000,3000)
+
+# print bike.sales_price()
+
+# print maruti.sales_price()
+
+# print tata.sales_price()
 
 
-print maruti.sales_price()
+# print maruti.purchase_price()
+# print tata.purchase_price()
 
-print tata.sales_price()
-
-
-print maruti.purchase_price()
-print tata.purchase_price()
-
-print scooty.sales_price()
-print scooty.purchase_price()
+# print scooty.sales_price()
+# print scooty.purchase_price()
 
 
