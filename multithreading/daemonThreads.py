@@ -29,10 +29,10 @@ t.start()
 
 #Wait for daemon thread to exit
 
-d.join(3)
-#t.join()
+# d.join(3)
+# t.join()
 
-print 'Is d Alive: ' , d.isAlive()
-t.join()
+# print 'Is d Alive: ' , d.isAlive()
+# t.join()
 
 

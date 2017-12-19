@@ -1,1 +1,4 @@
 *.db
+*.txt
+*.pyc
+*.xml
