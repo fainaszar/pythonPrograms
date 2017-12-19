@@ -3,8 +3,6 @@
 *.pyc
 *.xml
 *.json
-DemoWork/clinical data/*
-DemoWork/venv/*
-.csv
-.csv#
-DemoWork/node_modules/*
+*.csv
+*.csv#
+*.deb
