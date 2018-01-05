@@ -92,5 +92,5 @@ if day==0:
 	print "Invalid Date!"
 
 
-print "%r / %r / %r " % (year,month,day)
+print "{} / {} / {} ".format(year,month,day)
 
