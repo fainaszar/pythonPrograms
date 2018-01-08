@@ -1,0 +1,26 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+	<h1> Data </h1>
+	
+		{% for title in titles %}
+			<div class="card"><h4 class="text-primary"> {{ title.MedlineCitation.Article.ArticleTitle }} </h4>
+			
+			<p> Authors: {% for author  in title.MedlineCitation.Article.AuthorList.Author %}
+			{{ title.MedlineCitation.Article.AuthorList.Author.FirstName }} {{ author.ForeName }}  {{ author.LastName }},
+			{% endfor %} </p>
+			<p> <span class="text-secondary">Created on: </span> {{ title.MedlineCitation.DateCreated.Day }} / {{ title.MedlineCitation.DateCreated.Month }} / {{ title.MedlineCitation.DateCreated.Year }} 
+
+			 <span class="text-secondary">Completed on:  </span>{{ title.MedlineCitation.DateCompleted.Day }} / {{ title.MedlineCitation.DateCompleted.Month }} / {{ title.MedlineCitation.DateCompleted.Year }}
+
+			<span class="text-secondary"> Revised on: </span> {{ title.MedlineCitation.DateRevised.Day }} / {{ title.MedlineCitation.DateRevised.Month }} / {{ title.MedlineCitation.DateRevised.Year }} </p>
+
+
+
+		</div>
+		{% endfor %}
+
+
+
+
+{% endblock %}
