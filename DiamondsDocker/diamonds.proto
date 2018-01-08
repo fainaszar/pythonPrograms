@@ -1,0 +1,27 @@
+syntax = "proto3";
+service Diamonds{
+	
+	rpc GetDiamondsByType(TypeRequest) returns (stream TypeResponse) {}
+
+	rpc GetDiamondsByCarat(TypeRequest) returns (stream TypeResponse){}
+
+	rpc GetDiamondsByCaratRange(RangeRequest) returns (stream TypeResponse){}
+
+	rpc GetDiamondsByColor(TypeRequest) returns (stream TypeResponse){}
+
+	rpc GetDiamondsByPriceRange(RangeRequest) returns (stream TypeResponse){}
+}
+
+message TypeRequest{
+	string type=1;
+}
+
+message TypeResponse{
+	string type=1;
+}
+
+
+message RangeRequest{
+	string fromRange =1;
+	string toRange=2;
+}
