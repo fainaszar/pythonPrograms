@@ -1,0 +1,41 @@
+syntax = "proto3";
+
+service Messenger {
+	
+	rpc Welcome(WelcomeRequest) returns (WelcomeReply) {}
+
+	rpc AddNumbers(stream DataRequest) returns (DataResponse) {}
+
+	rpc GetPrimes(DataRequest) returns (stream DataResponse) {}
+
+
+	rpc Chat(stream InMessage) returns(stream OutMessage) {}
+
+}
+
+
+
+message WelcomeRequest{
+	string user = 1;
+}
+
+message WelcomeReply{
+	string message=1;
+}
+
+
+message DataRequest{
+	int32 data = 1;
+}
+
+message DataResponse{
+	int32 result = 1;
+}
+
+message InMessage{
+	string message =1;
+}
+
+message OutMessage{
+	string message=1;
+}
