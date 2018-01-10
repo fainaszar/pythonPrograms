@@ -17,8 +17,37 @@ file = open("output.json").read()
 es.index(index='sw',doc_type='people',body=file)
 #	i += 1
 
-result = es.get(index='sw',doc_type='people',id=33)
+result = es.get(index='sw',doc_type='people',id=5)
+
+outputFormat = """
+Name : {source[name]} ,
+Height : {source[height]} ,
+Gender: {source[gender]} ,
+Birth Year: {source[birth_year]},
+Mass : {source[mass]},
+Vehicles : {source[vehicles]},
+Url : {source[url]}"""
+
+
+# count=0
+# MissingIds=list()
+
+# for i in range(50):
+# 	try:
+# 		result = es.get(index='sw',doc_type='people',id=i)
+# 		source = result["_source"]
+# 		print(outputFormat).format(source=source)
+# 		count+=1
+# 	except:
+# 		MissingIds.append(i)
+
+
+# print "No of records printed: {} , Missing Ids include: {}".format(count,MissingIds)
 
 
 
 
+
+searchQueryResult = es.search(index="sw",body={"query":{"prefix": {"name" : "lu"}}})
+
+print searchQueryResult
