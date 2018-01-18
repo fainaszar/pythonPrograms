@@ -1,4 +1,0 @@
-python is a programming language
-it is very good for string manipulation
-this is a good way to write files
-
