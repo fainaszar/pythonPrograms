@@ -1,0 +1,114 @@
+[INFO] -- [2018-02-16 17:49:19,189] -- File Queue Created
+[INFO] -- [2018-02-16 17:49:19,189] -- FileGrabberThread Initialized
+[INFO] -- [2018-02-16 17:49:19,190] -- FileReaderThread Initialized
+[INFO] -- [2018-02-16 17:49:19,190] -- Starting Threads
+[INFO] -- [2018-02-16 17:49:19,190] -- FileGrabberThread started
+[INFO] -- [2018-02-16 17:49:19,190] -- Processing files in directory
+[INFO] -- [2018-02-16 17:49:19,190] -- Starting FileReaderThread
+[INFO] -- [2018-02-16 17:49:19,190] -- yielding file
+[INFO] -- [2018-02-16 17:49:19,191] -- yielding file
+[INFO] -- [2018-02-16 17:49:19,191] -- yielding file
+[INFO] -- [2018-02-16 17:49:19,191] -- yielding file
+[INFO] -- [2018-02-16 17:49:19,191] -- yielding file
+[INFO] -- [2018-02-16 17:49:19,191] -- yielding file
+[INFO] -- [2018-02-16 17:49:19,191] -- yielding file
+[INFO] -- [2018-02-16 17:49:19,191] -- yielding file
+[INFO] -- [2018-02-16 17:49:19,191] -- yielding file
+[INFO] -- [2018-02-16 17:49:19,191] -- yielding file
+[INFO] -- [2018-02-16 17:49:19,191] -- yielding file
+[INFO] -- [2018-02-16 17:49:19,191] -- yielding file
+[INFO] -- [2018-02-16 17:49:19,191] -- yielding file
+[INFO] -- [2018-02-16 17:49:19,191] -- yielding file
+[INFO] -- [2018-02-16 17:49:19,191] -- yielding file
+[INFO] -- [2018-02-16 17:49:19,191] -- yielding file
+[INFO] -- [2018-02-16 17:49:19,191] -- yielding file
+[INFO] -- [2018-02-16 17:49:19,191] -- yielding file
+[INFO] -- [2018-02-16 17:49:19,192] -- yielding file
+[INFO] -- [2018-02-16 17:49:19,192] -- yielding file
+[INFO] -- [2018-02-16 17:49:19,192] -- yielding file
+[INFO] -- [2018-02-16 17:49:19,192] -- yielding file
+[INFO] -- [2018-02-16 17:49:19,192] -- yielding file
+[INFO] -- [2018-02-16 17:49:19,192] -- yielding file
+[INFO] -- [2018-02-16 17:49:19,192] -- yielding file
+[INFO] -- [2018-02-16 17:49:19,192] -- yielding file
+[INFO] -- [2018-02-16 17:49:19,192] -- Grabbed files from the directory
+[INFO] -- [2018-02-16 17:49:19,192] -- File /home/faizan/Documents/python/multithreading/testingThreads.py pushed to queue
+[INFO] -- [2018-02-16 17:49:19,192] -- Getting file from the Queue
+[INFO] -- [2018-02-16 17:49:19,192] -- File /home/faizan/Documents/python/multithreading/threadData.py pushed to queue
+[INFO] -- [2018-02-16 17:49:19,192] -- File /home/faizan/Documents/python/multithreading/currentThreads.py pushed to queue
+[INFO] -- [2018-02-16 17:49:19,192] -- File /home/faizan/Documents/python/multithreading/lockholder.py pushed to queue
+[INFO] -- [2018-02-16 17:49:19,192] -- File /home/faizan/Documents/python/multithreading/queue.py pushed to queue
+[INFO] -- [2018-02-16 17:49:19,192] -- File /home/faizan/Documents/python/multithreading/primeUsingForElse.py pushed to queue
+[INFO] -- [2018-02-16 17:49:19,193] -- File /home/faizan/Documents/python/multithreading/itc.py pushed to queue
+[INFO] -- [2018-02-16 17:49:19,193] -- File /home/faizan/Documents/python/multithreading/lock.py pushed to queue
+[INFO] -- [2018-02-16 17:49:19,193] -- File /home/faizan/Documents/python/multithreading/barriers.py pushed to queue
+[INFO] -- [2018-02-16 17:49:19,194] -- File /home/faizan/Documents/python/multithreading/PCSyncThreads.py pushed to queue
+[INFO] -- [2018-02-16 17:49:19,194] -- File /home/faizan/Documents/python/multithreading/subclassingThreads.py pushed to queue
+[INFO] -- [2018-02-16 17:49:19,194] -- File /home/faizan/Documents/python/multithreading/signalingThreads.py pushed to queue
+[INFO] -- [2018-02-16 17:49:19,194] -- File /home/faizan/Documents/python/multithreading/multiq.py pushed to queue
+[INFO] -- [2018-02-16 17:49:19,194] -- File /home/faizan/Documents/python/multithreading/listIdioms.py pushed to queue
+[INFO] -- [2018-02-16 17:49:19,194] -- File /home/faizan/Documents/python/multithreading/app.py pushed to queue
+[INFO] -- [2018-02-16 17:49:19,194] -- File /home/faizan/Documents/python/multithreading/locksUsingWith.py pushed to queue
+[INFO] -- [2018-02-16 17:49:19,194] -- File /home/faizan/Documents/python/multithreading/enumerateThreads.py pushed to queue
+[INFO] -- [2018-02-16 17:49:19,194] -- File /home/faizan/Documents/python/multithreading/concurrency.py pushed to queue
+[INFO] -- [2018-02-16 17:49:19,194] -- File /home/faizan/Documents/python/multithreading/printer.py pushed to queue
+[INFO] -- [2018-02-16 17:49:19,194] -- File /home/faizan/Documents/python/multithreading/threadSync.py pushed to queue
+[INFO] -- [2018-02-16 17:49:19,194] -- File /home/faizan/Documents/python/multithreading/timerThreads.py pushed to queue
+[INFO] -- [2018-02-16 17:49:19,195] -- File /home/faizan/Documents/python/multithreading/daemonThreads.py pushed to queue
+[INFO] -- [2018-02-16 17:49:19,195] -- 1 file processed
+[INFO] -- [2018-02-16 17:49:19,195] -- File /home/faizan/Documents/python/multithreading/sema4s.py pushed to queue
+[INFO] -- [2018-02-16 17:49:19,195] -- Getting file from the Queue
+[INFO] -- [2018-02-16 17:49:19,195] -- File /home/faizan/Documents/python/multithreading/threading_basic.py pushed to queue
+[INFO] -- [2018-02-16 17:49:19,195] -- File /home/faizan/Documents/python/multithreading/rlock.py pushed to queue
+[INFO] -- [2018-02-16 17:49:19,195] -- File /home/faizan/Documents/python/multithreading/qthread.py pushed to queue
+[INFO] -- [2018-02-16 17:49:19,195] -- Processed 26 files
+[INFO] -- [2018-02-16 17:49:19,197] -- 1 file processed
+[INFO] -- [2018-02-16 17:49:19,197] -- Getting file from the Queue
+[INFO] -- [2018-02-16 17:49:19,199] -- 1 file processed
+[INFO] -- [2018-02-16 17:49:19,200] -- Getting file from the Queue
+[INFO] -- [2018-02-16 17:49:19,202] -- 1 file processed
+[INFO] -- [2018-02-16 17:49:19,202] -- Getting file from the Queue
+[INFO] -- [2018-02-16 17:49:19,204] -- 1 file processed
+[INFO] -- [2018-02-16 17:49:19,205] -- Getting file from the Queue
+[INFO] -- [2018-02-16 17:49:19,206] -- 1 file processed
+[INFO] -- [2018-02-16 17:49:19,207] -- Getting file from the Queue
+[INFO] -- [2018-02-16 17:49:19,209] -- 1 file processed
+[INFO] -- [2018-02-16 17:49:19,209] -- Getting file from the Queue
+[INFO] -- [2018-02-16 17:49:19,211] -- 1 file processed
+[INFO] -- [2018-02-16 17:49:19,211] -- Getting file from the Queue
+[INFO] -- [2018-02-16 17:49:19,213] -- 1 file processed
+[INFO] -- [2018-02-16 17:49:19,213] -- Getting file from the Queue
+[INFO] -- [2018-02-16 17:49:19,216] -- 1 file processed
+[INFO] -- [2018-02-16 17:49:19,216] -- Getting file from the Queue
+[INFO] -- [2018-02-16 17:49:19,218] -- 1 file processed
+[INFO] -- [2018-02-16 17:49:19,218] -- Getting file from the Queue
+[INFO] -- [2018-02-16 17:49:19,220] -- 1 file processed
+[INFO] -- [2018-02-16 17:49:19,220] -- Getting file from the Queue
+[INFO] -- [2018-02-16 17:49:19,223] -- 1 file processed
+[INFO] -- [2018-02-16 17:49:19,223] -- Getting file from the Queue
+[INFO] -- [2018-02-16 17:49:19,225] -- 1 file processed
+[INFO] -- [2018-02-16 17:49:19,225] -- Getting file from the Queue
+[INFO] -- [2018-02-16 17:49:19,227] -- 1 file processed
+[INFO] -- [2018-02-16 17:49:19,227] -- Getting file from the Queue
+[INFO] -- [2018-02-16 17:49:19,230] -- 1 file processed
+[INFO] -- [2018-02-16 17:49:19,230] -- Getting file from the Queue
+[INFO] -- [2018-02-16 17:49:19,232] -- 1 file processed
+[INFO] -- [2018-02-16 17:49:19,232] -- Getting file from the Queue
+[INFO] -- [2018-02-16 17:49:19,236] -- 1 file processed
+[INFO] -- [2018-02-16 17:49:19,236] -- Getting file from the Queue
+[INFO] -- [2018-02-16 17:49:19,239] -- 1 file processed
+[INFO] -- [2018-02-16 17:49:19,239] -- Getting file from the Queue
+[INFO] -- [2018-02-16 17:49:19,242] -- 1 file processed
+[INFO] -- [2018-02-16 17:49:19,242] -- Getting file from the Queue
+[INFO] -- [2018-02-16 17:49:19,244] -- 1 file processed
+[INFO] -- [2018-02-16 17:49:19,244] -- Getting file from the Queue
+[INFO] -- [2018-02-16 17:49:19,246] -- 1 file processed
+[INFO] -- [2018-02-16 17:49:19,247] -- Getting file from the Queue
+[INFO] -- [2018-02-16 17:49:19,249] -- 1 file processed
+[INFO] -- [2018-02-16 17:49:19,249] -- Getting file from the Queue
+[INFO] -- [2018-02-16 17:49:19,251] -- 1 file processed
+[INFO] -- [2018-02-16 17:49:19,251] -- Getting file from the Queue
+[INFO] -- [2018-02-16 17:49:19,253] -- 1 file processed
+[INFO] -- [2018-02-16 17:49:19,253] -- Getting file from the Queue
+[INFO] -- [2018-02-16 17:49:19,255] -- 1 file processed
+[INFO] -- [2018-02-16 17:49:19,255] -- Queue got empty
