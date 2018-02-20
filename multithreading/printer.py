@@ -3,6 +3,7 @@ import Queue
 import time
 import sys
 import subprocess
+import logging
 from backports.shutil_get_terminal_size import get_terminal_size 
 
 printq = Queue.Queue()
@@ -17,8 +18,9 @@ def main():
 	ptt.start()
 
 
-	for i in xrange(1,100):
+	for i in xrange(1,50):
 		printq.put(" ".join([str(x) for x in range(1,i) ]))
+		
 		time.sleep(.5)
 
 
@@ -49,6 +51,7 @@ def printer():
 		msg = "#"+"-"*(cols-2) + "#\n"
 		try:
 			new_line = str(printq.get_nowait())
+			
 			if new_line != '!@#EXIT#@!':
 				lines.append(new_line)
 				printq.task_done()
@@ -74,6 +77,7 @@ def printer():
 		sys.stdout.flush()
 		time.sleep(0.5)
 
+		
+
 
 main()
-printer()
