@@ -7,3 +7,5 @@
 *.csv#
 *.deb
 *.swp
+installed
+*.data
