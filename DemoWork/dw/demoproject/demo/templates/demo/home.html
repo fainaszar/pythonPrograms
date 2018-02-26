@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Demo</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+	<script src="https://ajax.gogleapis.com/ajax/libs/jquery/1.12.4/jquery-min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+	{% load static %} 
+   <script type="text/javascript" src="{% static "fusioncharts/fusioncharts.js" %}"></script>
+   <script type="text/javascript" src="{% static "fusioncharts/themes/fusioncharts.theme.fint.js" %}"></script>
+
+	
+</head>
+<body style="font-family: Ubuntu">
+
+	<div class="container">
+
+		<div class="card">
+			{% block content %}
+			<div class="card-body">
+				<h1 class='text-success text-center'> Record Linkage Results </h1>
+
+				
+				<form class="form-group">
+				
+			</form>
+
+			<div class="row">
+				<div class="col-sm-6" id="chart-1">{{chart|safe}}</div>
+				<div class="col-sm-6" id="chart-2">{{chart1|safe}}</div>
+			</div>
+
+			<div>
+				<h6 class="text-danger"> Indexer : <span class="text-primary">Sorted Neighbourhood Indexer </span></h6>
+				<h6 class="text-danger"> Indexing Field : <span class="text-primary">Title</span> </h6>
+				<h6 class="text-danger"> Records Compared : <span class="text-primary"> {{ countTitle }}</span></h6>
+
+
+				
+
+
+
+
+
+
+
+
+
+
+			<div class="card">
+				<div class="card-body">
+					<h3 class="text-center text-success"> Jarowinkler Method </h3>
+					<div class="row">
+						<div class="col-sm-4 text-center">MIN</div>
+						<div class="col-sm-4 text-center">MAX</div>
+						<div class="col-sm-4 text-center">MEAN</div>
+					</div>
+
+					<div class="row text-primary" style="font-size: 32px">
+						<div class="col-sm-4 text-center">{{ jminTitle }}</div>
+						<div class="col-sm-4 text-center">{{ jmaxTitle }}</div>
+						<div class="col-sm-4 text-center">{{ jmeanTitle }}</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="card-body">
+					<h3 class="text-center text-success"> Levenstien - Method  </h3>
+					<div class="row">
+						<div class="col-sm-4 text-center">MIN</div>
+						<div class="col-sm-4 text-center">MAX</div>
+						<div class="col-sm-4 text-center">MEAN</div>
+					</div>
+
+					<div class="row text-primary" style="font-size: 32px">
+						<div class="col-sm-4 text-center">{{ lminTitle }}</div>
+						<div class="col-sm-4 text-center">{{ lmaxTitle }}</div>
+						<div class="col-sm-4 text-center">{{ lmeanTitle }}</div>
+					</div>
+				</div>
+			</div>
+
+
+
+
+
+
+			<div>
+				<h6 class="text-danger"> Indexer : <span class="text-primary">Sorted Neighbourhood Indexer </span></h6>
+				<h6 class="text-danger"> Indexing Field : <span class="text-primary">Date Created</span> </h6>
+				<h6 class="text-danger"> Records Compared : <span class="text-primary"> {{ countDC }}</span></h6>
+
+
+				
+
+
+
+
+
+
+
+
+
+
+			<div class="card">
+				<div class="card-body">
+					<h3 class="text-center text-success"> Jarowinkler Method </h3>
+					<div class="row">
+						<div class="col-sm-4 text-center">MIN</div>
+						<div class="col-sm-4 text-center">MAX</div>
+						<div class="col-sm-4 text-center">MEAN</div>
+					</div>
+
+					<div class="row text-primary" style="font-size: 32px">
+						<div class="col-sm-4 text-center">{{ jminDC }}</div>
+						<div class="col-sm-4 text-center">{{ jmaxDC }}</div>
+						<div class="col-sm-4 text-center">{{ jmeanDC }}</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="card-body">
+					<h3 class="text-center text-success"> Levenstien - Method  </h3>
+					<div class="row">
+						<div class="col-sm-4 text-center">MIN</div>
+						<div class="col-sm-4 text-center">MAX</div>
+						<div class="col-sm-4 text-center">MEAN</div>
+					</div>
+
+					<div class="row text-primary" style="font-size: 32px">
+						<div class="col-sm-4 text-center">{{ lminDC }}</div>
+						<div class="col-sm-4 text-center">{{ lmaxDC }}</div>
+						<div class="col-sm-4 text-center">{{ lmeanDC }}</div>
+					</div>
+				</div>
+			</div>
+
+
+
+
+
+			<div>
+				<h6 class="text-danger"> Indexer : <span class="text-primary">Sorted Neighbourhood Indexer </span></h6>
+				<h6 class="text-danger"> Indexing Field : <span class="text-primary">Date Completed</span> </h6>
+				<h6 class="text-danger"> Records Compared : <span class="text-primary"> {{ countDE }}</span></h6>
+
+
+				
+
+
+
+
+
+
+
+
+
+
+			<div class="card">
+				<div class="card-body">
+					<h3 class="text-center text-success"> Jarowinkler Method </h3>
+					<div class="row">
+						<div class="col-sm-4 text-center">MIN</div>
+						<div class="col-sm-4 text-center">MAX</div>
+						<div class="col-sm-4 text-center">MEAN</div>
+					</div>
+
+					<div class="row text-primary" style="font-size: 32px">
+						<div class="col-sm-4 text-center">{{ jminDE }}</div>
+						<div class="col-sm-4 text-center">{{ jmaxDE }}</div>
+						<div class="col-sm-4 text-center">{{ jmeanDE }}</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="card-body">
+					<h3 class="text-center text-success"> Levenstien - Method  </h3>
+					<div class="row">
+						<div class="col-sm-4 text-center">MIN</div>
+						<div class="col-sm-4 text-center">MAX</div>
+						<div class="col-sm-4 text-center">MEAN</div>
+					</div>
+
+					<div class="row text-primary" style="font-size: 32px">
+						<div class="col-sm-4 text-center">{{ lminDE }}</div>
+						<div class="col-sm-4 text-center">{{ lmaxDE }}</div>
+						<div class="col-sm-4 text-center">{{ lmeanDE }}</div>
+					</div>
+				</div>
+			</div>
+
+
+
+
+
+			<div>
+				<h6 class="text-danger"> Indexer : <span class="text-primary">Sorted Neighbourhood Indexer </span></h6>
+				<h6 class="text-danger"> Indexing Field : <span class="text-primary">Date Revised</span> </h6>
+				<h6 class="text-danger"> Records Compared : <span class="text-primary"> {{ countDR }}</span></h6>
+
+
+				
+
+
+
+
+
+
+
+
+
+
+			<div class="card">
+				<div class="card-body">
+					<h3 class="text-center text-success"> Jarowinkler Method </h3>
+					<div class="row">
+						<div class="col-sm-4 text-center">MIN</div>
+						<div class="col-sm-4 text-center">MAX</div>
+						<div class="col-sm-4 text-center">MEAN</div>
+					</div>
+
+					<div class="row text-primary" style="font-size: 32px">
+						<div class="col-sm-4 text-center">{{ jminDR }}</div>
+						<div class="col-sm-4 text-center">{{ jmaxDR }}</div>
+						<div class="col-sm-4 text-center">{{ jmeanDR }}</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="card-body">
+					<h3 class="text-center text-success"> Levenstien - Method  </h3>
+					<div class="row">
+						<div class="col-sm-4 text-center">MIN</div>
+						<div class="col-sm-4 text-center">MAX</div>
+						<div class="col-sm-4 text-center">MEAN</div>
+					</div>
+
+					<div class="row text-primary" style="font-size: 32px">
+						<div class="col-sm-4 text-center">{{ lminDR }}</div>
+						<div class="col-sm-4 text-center">{{ lmaxDR }}</div>
+						<div class="col-sm-4 text-center">{{ lmeanDR }}</div>
+					</div>
+				</div>
+			</div>
+
+			
+
+			{% endblock %}
+			</div>
+		</div>
+
+
+	</div>
+</body>
+</html>

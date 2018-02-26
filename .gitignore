@@ -9,3 +9,13 @@
 *.swp
 installed
 *.data
+*.deb
+DemoWork/venv/*
+DemoWork/clinical_data/*
+*.sqlite3
+DemoWork/dw/django-wrapper-master/*
+DemoWork/dw/demoproject/fusioncharts/*
+Demowork/node_modules/*
+*.js
+*.ts
+
