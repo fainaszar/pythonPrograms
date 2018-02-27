@@ -1,13 +1,21 @@
 import types
+import inspect
+
+
+
 def createClass(classname ,inherants=None,others=None):
 
 	if inherants and others:
+		print("Createing with inherants and others")
 		return type(classname,inherants,others)
 	elif inherants:
+		print ("Creating with inherangts")
 		return type(classname,inherants,{})
 	elif others:
+		print ("Creating with others")
 		return type(classname,(),others)
 	else:
+		print("Creating with name only")
 		return type(classname,(),{})
 
 
@@ -39,6 +47,9 @@ def create_function(name,*args):
 			self.arg = arg
 
 
+		
+
+
 	y_code = types.CodeType(len(args),
                             y.func_code.co_nlocals,
                             y.func_code.co_stacksize,
@@ -55,17 +66,32 @@ def create_function(name,*args):
 	return types.FunctionType(y_code,y.func_globals,name)
 
 
+def create(name,*args):
+	print args
+	def func(self,*arg):
+
+		arg = args 
+		print arg
+		for a in arg:
+			print a
+			self.a = a
+
+		
+
+	
+	return func 
 
 
-init = create_function("init","name","course")
+#init = create_function("init","name","course")
 	
 
 
 
-
+init = create("init","name","course")
 
 
 Student = createClass("Student",None,{'__init__' : init})
 
-std = Student({"name":"name","course":"course"})
-print std.name
+std = Student("Faizan","Naseer")
+print repr(std)
+
